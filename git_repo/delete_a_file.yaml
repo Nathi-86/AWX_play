@@ -6,5 +6,16 @@
         path: /tmp/today_new_file1
         state: absent
 
+    - name: File check
+      ansible.builtin.shell: ls -l /tmp/today_new_file1
+      register: file_chk
+      ignore_errors: yes
+
+
+    - name: Output of ls cmd
+      debug:
+        var: file.stderr
+
+
 
 
