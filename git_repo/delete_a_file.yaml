@@ -6,11 +6,5 @@
         path: /tmp/today_new_file1
         state: absent
 
-    - name: list file
-      ansible.builtin.shell: ls -l /tmp/today_new_file1
-      register: file
-
-    - debug:
-        var: file.stderr
 
 
