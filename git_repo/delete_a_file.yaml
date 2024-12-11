@@ -14,7 +14,7 @@
 
     - name: Output of ls cmd
       debug:
-        var: file.stderr
+        var: file_chk.stderr
 
 
 
